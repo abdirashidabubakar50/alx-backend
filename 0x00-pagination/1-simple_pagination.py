@@ -43,14 +43,15 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
+        """Retrieve the specified page of data
+        """
 
         # page and page_size are both integers and greater than 0
-        assert isinstance(page, int) and page > 0, "page must be an integer or greater than 0"
-        assert isinstance(page_size, int) > 0, "page_size must be an integer greater than 0"
+        assert isinstance(page, int) and page > 0
+        assert isinstance(page_size, int) > 0
 
         dataset = self.dataset()
         start_index, end_index = index_range(page, page_size)
-
 
         # Return the requested page or an empty list if out of range
         if start_index < len(dataset):
