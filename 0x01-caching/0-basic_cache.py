@@ -4,6 +4,7 @@
 """
 BaseCaching = __import__('base_caching').BaseCaching
 
+
 class BasicCache(BaseCaching):
     """ BasicCache class that inherits from BaseCaching and is a caching system
         without any limit.
