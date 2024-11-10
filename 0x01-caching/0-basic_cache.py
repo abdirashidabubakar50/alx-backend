@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 BaseCaching = __import__('base_caching').BaseCaching
 
-""" This module defines a class BasicCache that inherits form baseCaching
+""" This module defines a class BasicCache
 """
 
 class BasicCache(BaseCaching):
